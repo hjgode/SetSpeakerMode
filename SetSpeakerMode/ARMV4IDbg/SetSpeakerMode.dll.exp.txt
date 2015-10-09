@@ -1,0 +1,35 @@
+Microsoft (R) COFF/PE Dumper Version 6.24.3077
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file D:\C-Source\test\VoiceDialer\SetSpeakerMode\ARMV4IDbg\SetSpeakerMode.dll
+
+File Type: DLL
+
+  Section contains the following exports for SetSpeakerMode.dll
+
+    00000000 characteristics
+    4C556A52 time date stamp Sun Aug 01 14:36:34 2010
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000127C ??0CSetSpeakerMode@@QAA@XZ
+          2    1 00001000 ??4CSetSpeakerMode@@QAAAAV0@ABV0@@Z
+          7    2 00001274 ?fnSetSpeakerMode@@YAHXZ
+          8    3 0000321C ?nSetSpeakerMode@@3HA
+          6    4 00001540 SetSpeakerMode
+          3    5 00001028 SetSpeakerMode1
+          4    6 00001098 SetSpeakerMode2
+          5    7 00001200 SetSpeakerMode3
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .text
