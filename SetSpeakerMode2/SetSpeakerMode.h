@@ -5,11 +5,14 @@
 // that uses this DLL. This way any other project whose source files include this file see 
 // SETSPEAKERMODE_API functions as being imported from a DLL, wheras this DLL sees symbols
 // defined with this macro as being exported.
-#ifdef SETSPEAKERMODE_EXPORTS
+#ifdef SETSPEAKERMODE2_EXPORTS
 #define SETSPEAKERMODE_API __declspec(dllexport)
 #else
 #define SETSPEAKERMODE_API __declspec(dllimport)
 #endif
+
+SETSPEAKERMODE_API int ToggleSpeakerMode(bool);
+SETSPEAKERMODE_API int ToggleSpeakerMode2(bool);
 
 /*
 // This class is exported from the SetSpeakerMode.dll

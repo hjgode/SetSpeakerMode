@@ -45,6 +45,7 @@
             this.btnNormal1.Size = new System.Drawing.Size(125, 33);
             this.btnNormal1.TabIndex = 0;
             this.btnNormal1.Text = "Normal";
+            this.btnNormal1.Click += new System.EventHandler(this.btnNormal1_Click);
             // 
             // btnSpeaker1
             // 
@@ -53,6 +54,7 @@
             this.btnSpeaker1.Size = new System.Drawing.Size(125, 33);
             this.btnSpeaker1.TabIndex = 0;
             this.btnSpeaker1.Text = "Speaker";
+            this.btnSpeaker1.Click += new System.EventHandler(this.btnSpeaker1_Click);
             // 
             // btnNormal2
             // 
@@ -61,6 +63,7 @@
             this.btnNormal2.Size = new System.Drawing.Size(125, 33);
             this.btnNormal2.TabIndex = 0;
             this.btnNormal2.Text = "Normal";
+            this.btnNormal2.Click += new System.EventHandler(this.btnNormal2_Click);
             // 
             // btnSpeaker2
             // 
@@ -69,6 +72,7 @@
             this.btnSpeaker2.Size = new System.Drawing.Size(125, 33);
             this.btnSpeaker2.TabIndex = 0;
             this.btnSpeaker2.Text = "Speaker";
+            this.btnSpeaker2.Click += new System.EventHandler(this.btnSpeaker2_Click);
             // 
             // label1
             // 

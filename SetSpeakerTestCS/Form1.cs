@@ -13,15 +13,39 @@ namespace SetSpeakerTestCS
 {
     public partial class Form1 : Form
     {
-        [DllImport("SetSpeakerMode.dll", EntryPoint = "ToggleSpeakerPhone")]
+        //using DeviceIoControl with WAV device
+        [DllImport("SetSpeakerMode2.dll", EntryPoint = "ToggleSpeakerPhone")]
         extern static int ToggleSpeakerPhone(bool bEnable);
 
-        [DllImport("SetSpeakerMode2.dll", EntryPoint = "ToggleSpeakerPhone")]
+        // using undocumented ossvc functions
+        [DllImport("SetSpeakerMode2.dll", EntryPoint = "ToggleSpeakerPhone2")]
         extern static int ToggleSpeakerPhone2(bool bEnable);
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnNormal1_Click(object sender, EventArgs e)
+        {
+            ToggleSpeakerPhone(false);
+        }
+
+        private void btnSpeaker1_Click(object sender, EventArgs e)
+        {
+            ToggleSpeakerPhone(true);
+        }
+
+        private void btnNormal2_Click(object sender, EventArgs e)
+        {
+            ToggleSpeakerPhone2(false);
+
+        }
+
+        private void btnSpeaker2_Click(object sender, EventArgs e)
+        {
+            ToggleSpeakerPhone2(true);
+
         }
     }
 }

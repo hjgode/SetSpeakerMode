@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "SetSpeakerMode.h"
+//#include "SetSpeakerMode.h"
 #include "SetSpeakerMode2.h"
 
 
@@ -14,15 +14,15 @@ BOOL APIENTRY DllMain( HANDLE hModule,
     switch (ul_reason_for_call)
 	{
 		case DLL_PROCESS_ATTACH:
-			if (loadLib())
-				DEBUGMSG(1, (L"SetSpeakerMode2 loaded OK\n"));
-			else
-				DEBUGMSG(1, (L"SetSpeakerMode2 load FAILED\n"));
+			//if (loadLib())
+			//	DEBUGMSG(1, (L"SetSpeakerMode2 loaded OK\n"));
+			//else
+			//	DEBUGMSG(1, (L"SetSpeakerMode2 load FAILED\n"));
 			break;
 		case DLL_THREAD_ATTACH:
 		case DLL_THREAD_DETACH:
 		case DLL_PROCESS_DETACH:
-			freeLib();
+//			freeLib();
 			break;
     }
     return TRUE;
